@@ -62,7 +62,7 @@ ENABLE_CPUSETS := true
 TARGET_USE_SDCLANG := true
 
 # Properties
-TARGET_SYSTEM_PROP += $(LOCAL_PATH)/conf/system.prop
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/conf/system.prop
 
 # Boot image/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 dwc3_msm.hvdcp_max_current=1500 dwc3_msm.prop_chg_detect=Y coherent_pool=2M androidboot.selinux=permissive
@@ -75,7 +75,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_VERSION := 3.10
-TARGET_PREBUILT_KERNEL := device/sony/suzuran/kernel
+TARGET_PREBUILT_KERNEL := device/sony/suzuran/kernel/Image.gz-dtb
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 TARGET_NO_RECOVERY := false
 TARGET_NO_KERNEL := false
