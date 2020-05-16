@@ -3,7 +3,7 @@
 #
 
 # Path
-COMMON_PATH := device/sony/kitakami-common
+LOCAL_PATH := device/sony/suzuran
 TWRP_OUT := recovery/root
 
 # Copy kernel
@@ -25,4 +25,4 @@ PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:$(TWRP_OUT)/system/usr/share/zoneinfo/tzdata
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/twrp.fstab:$(TWRP_OUT)/etc/twrp.fstab
+    $(LOCAL_PATH)/rootdir/twrp.fstab:$(TWRP_OUT)/etc/twrp.fstab
