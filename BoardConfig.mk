@@ -109,3 +109,7 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/thermal-engine.conf:system/etc/thermal-engine.conf
+    
+# Res
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
