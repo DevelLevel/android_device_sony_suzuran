@@ -18,9 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-# Copy kernel
-PRODUCT_COPY_FILES += device/sony/suzuran/kernel/Image.gz-dtb:kernel
-
+# Device
 PRODUCT_DEVICE := suzuran
 PRODUCT_NAME := omni_suzuran
 PRODUCT_BRAND := Sony
