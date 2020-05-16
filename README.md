@@ -22,3 +22,28 @@ Front Camera | 5.1 MP
 Release Date | October 2015
 
 ![Sony Xperia Z5 Compact](http://cdn2.gsmarena.com/vv/pics/sony/sony-z5-compact1.jpg "Sony Xperia Z5 Compact")
+====     ====
+To build TWRP
+====     ====
+
+Clone twrp minimal sources:
+repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
+-
+
+Revert this commit:
+https://github.com/TeamWin/android_bootable_recovery/commit/a2bd7b7758a4585814f642d55301043276d8a002
+-
+
+Copy android-base/ to base/:
+cd system/core/base/include/
+cp android-base/ base
+-
+
+Clone this repository to device/sony/suzuran
+git clone https://github.com/DevelLevel/android_device_sony_suzuran-AEX.git -b twrp device/sony/suzuran
+-
+
+Start the build!
+. build/envsetup.sh
+lunch omni_suzuran-userdebug
+make recoveryimage
