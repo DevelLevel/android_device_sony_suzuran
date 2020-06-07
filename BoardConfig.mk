@@ -125,7 +125,6 @@ PRODUCT_COPY_FILES += device/sony/suzuran/kernel/Image.gz-dtb:kernel
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/twrp.fstab
 
 # TWRP
-TW_MAX_BRIGHTNESS := 255
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_THEME := portrait_hdpi
