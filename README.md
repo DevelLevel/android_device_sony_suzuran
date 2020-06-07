@@ -1,5 +1,3 @@
-Copyright (C) 2016 - The CyanogenMod Project
-
 Copyright (C) 2017 - The LineageOS Project
 
 Device configuration for Sony Xperia Z5 Compact
@@ -29,22 +27,23 @@ To build TWRP
 
 Clone twrp minimal sources:
 repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
-
-
-Revert this commit:
-https://github.com/TeamWin/android_bootable_recovery/commit/a2bd7b7758a4585814f642d55301043276d8a002
-
+-
 
 Copy android-base/ to base/:
 cd system/core/base/include/
+-
 cp android-base/ base
+-
 
-
-Clone this repository to device/sony/suzuran
+Clone this repository to device/sony/suzuran:
 git clone https://github.com/DevelLevel/android_device_sony_suzuran-AEX.git -b twrp device/sony/suzuran
-
+-
 
 Start the build!
+
 . build/envsetup.sh
+-
 lunch omni_suzuran-userdebug
+-
 make recoveryimage
+-
