@@ -28,6 +28,8 @@ Clone twrp minimal sources:
 -
 repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-7.1
 
+repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+
 
 Copy android-base/ to base/:
 -
