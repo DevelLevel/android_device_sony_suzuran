@@ -35,7 +35,7 @@ Copy android-base/ to base/:
 -
 cd system/core/base/include/
 
-cp android-base/ base
+cp -r android-base/ base
 
 
 Clone this repository to device/sony/suzuran:
@@ -49,5 +49,5 @@ Start the build!:
 
 lunch omni_suzuran-userdebug
 
-make recoveryimage
+make recoveryimage -jx
 
