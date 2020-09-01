@@ -14,6 +14,9 @@
 
 TARGET_KERNEL_CONFIG := aosp_kitakami_suzuran_defconfig
 
+
+$(call inherit-product, vendor/aosp/common.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/suzuran/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
