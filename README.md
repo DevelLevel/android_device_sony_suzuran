@@ -30,14 +30,6 @@ repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.
 
 repo sync -c -jx --force-sync --no-clone-bundle --no-tags
 
-
-Copy android-base/ to base/:
--
-cd system/core/base/include/
-
-cp -r android-base/ base
-
-
 Clone this repository to device/sony/suzuran:
 -
 git clone https://github.com/DevelLevel/android_device_sony_suzuran-AEX.git -b twrp device/sony/suzuran
