@@ -18,9 +18,9 @@
 $(call inherit-product, device/sony/suzuran/full_suzuran.mk)
 
 # Inherit some common CM stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
-PRODUCT_NAME := lineage_suzuran
+PRODUCT_NAME := aosp_suzuran
 
 # Use the latest approved GMS identifiers
 
