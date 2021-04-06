@@ -17,7 +17,7 @@
 $(call inherit-product, device/sony/suzuran/full_suzuran.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # This indicates the first api level, device has been commercially launched on.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
