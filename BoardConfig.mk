@@ -26,7 +26,6 @@ TARGET_OTA_ASSERT_DEVICE := E5803,E5823,suzuran
 TARGET_KERNEL_CONFIG := kitakami_suzuran_defconfig
 
 # Lineage hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
 
 # Partitions
