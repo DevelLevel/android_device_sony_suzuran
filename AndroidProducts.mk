@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_suzuran.mk
+    $(LOCAL_DIR)/havoc_suzuran.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_suzuran-user \
-    lineage_suzuran-userdebug \
-    lineage_suzuran-eng
+    havoc_suzuran-user \
+    havoc_suzuran-userdebug \
+    havoc_suzuran-eng
 
