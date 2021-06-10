@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_suzuran.mk
+    $(LOCAL_DIR)/aosp_suzuran.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_suzuran-user \
-    havoc_suzuran-userdebug \
-    havoc_suzuran-eng
+    aosp_suzuran-user \
+    aosp_suzuran-userdebug \
+    aosp_suzuran-eng
 
