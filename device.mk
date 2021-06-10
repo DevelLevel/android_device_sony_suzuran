@@ -28,6 +28,10 @@ $(call inherit-product-if-exists, vendor/fdroid/fdroid-vendor.mk)
 PRODUCT_PACKAGES += \
     privapp_whitelist_org.fdroid.fdroid.privileged.xml
 
+# Messaging
+PRODUCT_PACKAGES += \
+    messaging
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
