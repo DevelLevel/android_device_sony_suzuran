@@ -72,3 +72,7 @@ PRODUCT_COPY_FILES += \
 # WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/bcmdhd.cal:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/bcmdhd/bcmdhd.cal
+
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/../../../vendor/aosp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
